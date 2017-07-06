@@ -1,3 +1,32 @@
+<!---SAMPLE
+        <li class="active treeview">
+          <a href="#">
+            <i class="fa fa-dashboard text-aqua"></i> <span>Home</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li class="active"><a href="<?php echo site_url('/home') ?>"><i class="fa fa-circle-o"></i> home </a></li>
+          </ul>
+        </li>
+
+        <li class="active treeview">
+          <a href="#">
+            <i class="fa fa-dashboard text-aqua"></i> <span>Report</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="<?php echo site_url('/report/performance') ?>"><i class="fa fa-circle-o"></i> Performance Sales </a></li>
+            <li><a href="<?php echo site_url('/report/realisasi') ?>"><i class="fa fa-circle-o"></i> Realisasi Sales </a></li>
+          </ul>
+        </li>
+------>
+
+
+
 		
  			<?php 
 /*
@@ -56,7 +85,7 @@ $sales_type = $_SESSION['SALES_ID'];
 </div>
 --->
 			
-<!----======================================================================================================================================----> 
+<!----OK======================================================================================================================================----> 
 <!-- SALES MENU $sales_type == 15 || $sales_type == 11 || $sales_type == 10 || $sales_type == 12)-->	
 <?php } if($level == 'SALES' && $sales_type == 15 || $sales_type == 11 || $sales_type == 10 || $sales_type == 12){?>
 <!-----
@@ -82,7 +111,7 @@ $sales_type = $_SESSION['SALES_ID'];
             </span>
           </a>
           <ul class="treeview-menu">
-            <li class="active"><a href="<?php echo site_url('/home') ?>"><i class="fa fa-circle-o"></i> home </a></li>
+            <li class="active"><a href="<?php echo site_url('/home') ?>"><i class="fa fa-circle-o"></i> Home </a></li>
           </ul>
         </li>
 
@@ -133,7 +162,7 @@ $sales_type = $_SESSION['SALES_ID'];
         <!-- end menu home -->
 
         <!-- menu -->
-        <li class="treeview">
+        <li class="active treeview">
           <a href="#">
             <i class="fa fa-th text-aqua"></i> <span>Flagging</span>
             <span class="pull-right-container">
@@ -151,7 +180,7 @@ $sales_type = $_SESSION['SALES_ID'];
 
 
         <!-- menu -->
-        <li class="treeview">
+        <li class="active treeview">
           <a href="#">
             <i class="fa fa-th text-aqua"></i> <span>Manajemen Leads</span>
             <span class="pull-right-container">
@@ -168,7 +197,7 @@ $sales_type = $_SESSION['SALES_ID'];
 
 
         <!-- menu -->
-        <li class="treeview">
+        <li class="active treeview">
           <a href="#">
             <i class="fa fa-th text-aqua"></i> <span>Stagging & Activity</span>
             <span class="pull-right-container">
@@ -177,7 +206,7 @@ $sales_type = $_SESSION['SALES_ID'];
           </a>
           <ul class="treeview-menu">
 
-            <li><a href="<?php echo site_url('activity') ?>"><i class="fa fa-circle-o"></i>Stagging & Activity</a></li>            
+            <li><a href="<?php echo site_url('activity/') ?>"><i class="fa fa-circle-o"></i>Stagging & Activity</a></li>            
 
 		  </ul>
         </li>
@@ -185,7 +214,7 @@ $sales_type = $_SESSION['SALES_ID'];
 		
 
         <!-- menu -->
-        <li class="treeview">
+        <li class="active treeview">
           <a href="#">
             <i class="fa fa-th text-aqua"></i> <span>Report</span>
             <span class="pull-right-container">
@@ -208,7 +237,7 @@ $sales_type = $_SESSION['SALES_ID'];
         <!-- end menu  -->		
 		
         <!-- menu -->
-        <li class="treeview">
+        <li class="active treeview">
           <a href="#">
             <i class="fa fa-th text-aqua"></i> <span>Performance Tunjangan</span>
             <span class="pull-right-container">
@@ -225,7 +254,7 @@ $sales_type = $_SESSION['SALES_ID'];
 		
 
 <!-- Account Planning-->
-        <li class="treeview">
+        <li class="active treeview">
           <a href="#">
             <i class="fa fa-th text-aqua"></i> <span>Account Planning</span>
             <span class="pull-right-container">
@@ -235,7 +264,7 @@ $sales_type = $_SESSION['SALES_ID'];
           <ul class="treeview-menu">
 
             <li><a href="<?php echo site_url('account_planning/list_account_planning') ?>"><i class="fa fa-circle-o"></i>Usulan</a></li>
-            <li><a href="<?php echo site_url('account_planning/report') ?>"><i class="fa fa-circle-o"></i>Report </a></li>
+            <li><a href="<?php echo site_url('account_planning/report_new') ?>"><i class="fa fa-circle-o"></i>Report </a></li>
             
           </ul>
         </li>
@@ -272,7 +301,7 @@ $sales_type = $_SESSION['SALES_ID'];
         </li>				
 				
 				
-        <li class="treeview">
+        <li class="active treeview">
           <a href="#">
             <i class="fa fa-dashboard text-aqua"></i> <span>Flagging</span>
             <span class="pull-right-container">
@@ -287,7 +316,7 @@ $sales_type = $_SESSION['SALES_ID'];
         </li>				
 				
 
-        <li class="treeview">
+        <li class="active treeview">
           <a href="#">
             <i class="fa fa-dashboard text-aqua"></i> <span>Management Leads</span>
             <span class="pull-right-container">
@@ -299,7 +328,7 @@ $sales_type = $_SESSION['SALES_ID'];
           </ul>
         </li>				
 				
-        <li class="treeview">
+        <li class="active treeview">
           <a href="#">
             <i class="fa fa-dashboard text-aqua"></i> <span> Staging & Activity </span>
             <span class="pull-right-container">
@@ -312,7 +341,7 @@ $sales_type = $_SESSION['SALES_ID'];
         </li>				
 				
 			
-        <li class="treeview">
+        <li class="active treeview">
           <a href="#">
             <i class="fa fa-dashboard text-aqua"></i> <span> Report Tunjangan Performance </span>
             <span class="pull-right-container">
@@ -325,7 +354,7 @@ $sales_type = $_SESSION['SALES_ID'];
         </li>			
 			
 			
-        <li class="treeview">
+        <li class="active treeview">
           <a href="#">
             <i class="fa fa-dashboard text-aqua"></i> <span> Report </span>
             <span class="pull-right-container">
@@ -436,18 +465,48 @@ $sales_type = $_SESSION['SALES_ID'];
                 
                 <?php } if($level == 'WILAYAH' || $level == 'CABANG') { ?>
              	
-                <!-- WILAYAH MENU -->                
+                <!-- WILAYAH MENU --> 
+<!---
                 <h3><a href="#">Dashboard</a></h3>
             	<div id='box-body'>
                     <a href="<?php echo site_url('/home/') ?>" class="side"><img src="<?php echo ICONS ?>arrow_right.gif" alt="arrow" border="0" />Home</a>
                     <a href="<?php echo site_url('/dashboard/') ?>" class="side"><img src="<?php echo ICONS ?>arrow_right.gif" alt="arrow" border="0" />Dashboard Sales</a>
                 </div>
+				
 				<h3><a href="#">Report Tunjangan Performance</a></h3>
-			<div id='box-body'>
+				<div id='box-body'>
 				<a href="<?php echo site_url('/report/performance_sup_tunjangan/') ?>" class="side"><img src="<?php echo ICONS ?>arrow_right.gif" alt="arrow" border="0" />Tunjangan Performance</a>
-			</div>
+				</div>
+-->				
+        <li class="active treeview">
+          <a href="#">
+            <i class="fa fa-dashboard text-aqua"></i> <span>Dashboard</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li class="active"><a href="<?php echo site_url('/home') ?>"><i class="fa fa-circle-o"></i> Home </a></li>
+            <li class="active"><a href="<?php echo site_url('/dashboard') ?>"><i class="fa fa-circle-o"></i> Dashboard </a></li>
+          </ul>
+        </li>
+
+        <li class="active treeview">
+          <a href="#">
+            <i class="fa fa-dashboard text-aqua"></i> <span>Report Tunjangan Performance</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="<?php echo site_url('/report/performance_sup_tunjangan/') ?>"><i class="fa fa-circle-o"></i> Report Performance Tunjangan </a></li>
+            <li><a href="<?php echo site_url('/report/realisasi') ?>"><i class="fa fa-circle-o"></i> Realisasi Sales </a></li>
+          </ul>
+        </li>
+<!--
                 <h3><a href="#">Report</a></h3>
                 <div id='box-body'>
+-->			
 					<!--
                     <a href="<?php echo site_url('/report/activity_realisasi/') ?>" class="side"><img src="<?php echo ICONS ?>arrow_right.gif" alt="arrow" border="0" />Aktivitas Sdh Realisasi</a>
 					<a href="<?php echo site_url('/report/activity_realisasi_tele/') ?>" class="side"><img src="<?php echo ICONS ?>arrow_right.gif" alt="arrow" border="0" />Aktivitas Sdh Realisasi 500046</a>
@@ -456,37 +515,83 @@ $sales_type = $_SESSION['SALES_ID'];
 					<a href="<?php echo site_url('/report/oportunity/') ?>" class="side"><img src="<?php echo ICONS ?>arrow_right.gif" alt="arrow" border="0" />Rasio Aktivitas Sales</a>                
                		<a href="<?php echo site_url('/report/cust_planning_daily/') ?>" class="side"><img src="<?php echo ICONS ?>arrow_right.gif" alt="arrow" border="0" />Perencanaan Aktivitas</a> 
                     <a href="<?php echo site_url('/report/daily_closed/') ?>" class="side"><img src="<?php echo ICONS ?>arrow_right.gif" alt="arrow" border="0" />Penutupan Penjualan</a--> 
-                	<a href="<?php echo site_url('/report/nasabah_cab/') ?>" class="side"><img src="<?php echo ICONS ?>arrow_right.gif" alt="arrow" border="0" />Nasabah Kelolaan Sales</a>
 					<!--<a href="<?php echo site_url('/report/nasabah_cab_aum/') ?>" class="side"><img src="<?php echo ICONS ?>arrow_right.gif" alt="arrow" border="0" />AUM Nasabah Kel. Sales</a>-->
-					<a href="<?php echo site_url('/report/kelolaan_year/') ?>" class="side"><img src="<?php echo ICONS ?>arrow_right.gif" alt="arrow" border="0" />DPK Sales</a>
-                    <a href="<?php echo site_url('/report/realisasi_sup/') ?>" class="side"><img src="<?php echo ICONS ?>arrow_right.gif" alt="arrow" border="0" />Realisasi Sales</a> 
-					<a href="<?php echo site_url('/report/realisasi_cab/') ?>" class="side"><img src="<?php echo ICONS ?>arrow_right.gif" alt="arrow" border="0" />Realisasi Sales Bulanan</a>
-                    <a href="<?php echo site_url('/report/real_year/') ?>" class="side"><img src="<?php echo ICONS ?>arrow_right.gif" alt="arrow" border="0" />Realisasi Sales Tahunan</a>					
-                    <a href="<?php echo site_url('/report/performance_cab2/') ?>" class="side"><img src="<?php echo ICONS ?>arrow_right.gif" alt="arrow" border="0" />Performa Sales</a>
                     <!--a href="<?php echo site_url('/report/performance_cab/') ?>" class="side"><img src="<?php echo ICONS ?>arrow_right.gif" alt="arrow" border="0" />Performa Sales Cabang</a> -->
-					<a href="<?php echo site_url('/report/monthly_performance/') ?>" class="side"><img src="<?php echo ICONS ?>arrow_right.gif" alt="arrow" border="0" />Performa Sales Bulanan</a>
-					<a href="<?php echo site_url('/report/perform_year/') ?>" class="side"><img src="<?php echo ICONS ?>arrow_right.gif" alt="arrow" border="0" />Performa Sales Tahunan</a>
                     <!--<a href="<?php echo site_url('/report/nasabah/') ?>" class="side"><img src="<?php echo ICONS ?>arrow_right.gif" alt="arrow" border="0" />Nasabah Kel. Non Sales</a>-->
-				    <a href="<?php echo site_url('/report/new_customer_sup/') ?>" class="side"><img src="<?php echo ICONS ?>arrow_right.gif" alt="arrow" border="0" />NOC Sales</a>
-					<a href="<?php echo site_url('/report/new_account_sup/') ?>" class="side" style="border-bottom:none"><img src="<?php echo ICONS ?>arrow_right.gif" alt="arrow" border="0" />NOA Sales</a> 
 					<!--<a href="<?php echo site_url('/report/nasabah_aum/') ?>" class="side"><img src="<?php echo ICONS ?>arrow_right.gif" alt="arrow" border="0" />AUM Nasabah Kel. Non Sales</a>-->
-                    <a href="<?php echo site_url('/report/konsumer_sup/') ?>" class="side" style="border-bottom:none"><img src="<?php echo ICONS ?>arrow_right.gif" alt="arrow" border="0" />Penj. Krdt Konsumtif Sales</a>	
-					<a href="<?php echo site_url('/report/cc/') ?>" class="side" style="border-bottom:none"><img src="<?php echo ICONS ?>arrow_right.gif" alt="arrow" border="0" />Penj. Kartu Kredit Sales</a>		
-					<a href="<?php echo site_url('/report/dplk/') ?>" class="side" style="border-bottom:none"><img src="<?php echo ICONS ?>arrow_right.gif" alt="arrow" border="0" />Rek. DPLK Sales</a>
-					 <a href="<?php echo site_url('/report/user_aktif/') ?>" class="side"><img src="<?php echo ICONS ?>arrow_right.gif" alt="arrow" border="0" />User Active</a>
-					 <a href="<?php echo site_url('/report/user_nonaktif/') ?>" class="side"><img src="<?php echo ICONS ?>arrow_right.gif" alt="arrow" border="0" />User Non Active</a>
-					<a href="<?php echo site_url('/report/pipeline_sup/') ?>" class="side" style="border-bottom:none"><img src="<?php echo ICONS ?>arrow_right.gif" alt="arrow" border="0" />Report Pipeline (Tgl)</a>	
 					<!--<a href="<?php echo site_url('/report/pipeline_coach_sourcedata/') ?>" class="side" style="border-bottom:none"><img src="<?php echo ICONS ?>arrow_right.gif" alt="arrow" border="0" />Report Pipeline Worksheet(Sumber Leads)</a>-->
+<!--                <a href="<?php echo site_url('/report/perform_sales_year/') ?>" class="side"><img src="<?php echo ICONS ?>arrow_right.gif" alt="arrow" border="0" />Performance Sales Tahunan</a>
+ -->                
+ 
+<!--
+                	<a href="<?php echo site_url('/report/nasabah_cab/') ?>" class="side"><img src="<?php echo ICONS ?>arrow_right.gif" alt="arrow" border="0" />								   Nasabah Kelolaan Sales</a>
+					<a href="<?php echo site_url('/report/kelolaan_year/') ?>" class="side"><img src="<?php echo ICONS ?>arrow_right.gif" alt="arrow" border="0" />								   DPK Sales</a>
+                    <a href="<?php echo site_url('/report/realisasi_sup/') ?>" class="side"><img src="<?php echo ICONS ?>arrow_right.gif" alt="arrow" border="0" />								   Realisasi Sales</a> 
+					<a href="<?php echo site_url('/report/realisasi_cab/') ?>" class="side"><img src="<?php echo ICONS ?>arrow_right.gif" alt="arrow" border="0" />								   Realisasi Sales Bulanan</a>
+                    <a href="<?php echo site_url('/report/real_year/') ?>" class="side"><img src="<?php echo ICONS ?>arrow_right.gif" alt="arrow" border="0" />									   Realisasi Sales Tahunan</a>					
+                    <a href="<?php echo site_url('/report/performance_cab2/') ?>" class="side"><img src="<?php echo ICONS ?>arrow_right.gif" alt="arrow" border="0" />							   Performa Sales</a>
+					<a href="<?php echo site_url('/report/monthly_performance/') ?>" class="side"><img src="<?php echo ICONS ?>arrow_right.gif" alt="arrow" border="0" />						   Performa Sales Bulanan</a>
+					<a href="<?php echo site_url('/report/perform_year/') ?>" class="side"><img src="<?php echo ICONS ?>arrow_right.gif" alt="arrow" border="0" />								   Performa Sales Tahunan</a>
+				    <a href="<?php echo site_url('/report/new_customer_sup/') ?>" class="side"><img src="<?php echo ICONS ?>arrow_right.gif" alt="arrow" border="0" />							   NOC Sales</a>
+					<a href="<?php echo site_url('/report/new_account_sup/') ?>" class="side" style="border-bottom:none"><img src="<?php echo ICONS ?>arrow_right.gif" alt="arrow" border="0" />   NOA Sales</a> 
+                    <a href="<?php echo site_url('/report/konsumer_sup/') ?>" class="side" style="border-bottom:none"><img src="<?php echo ICONS ?>arrow_right.gif" alt="arrow" border="0" />	   Penj. Krdt Konsumtif Sales</a>	
+					<a href="<?php echo site_url('/report/cc/') ?>" class="side" style="border-bottom:none"><img src="<?php echo ICONS ?>arrow_right.gif" alt="arrow" border="0" />  			   Penj. Kartu Kredit Sales</a>		
+					<a href="<?php echo site_url('/report/dplk/') ?>" class="side" style="border-bottom:none"><img src="<?php echo ICONS ?>arrow_right.gif" alt="arrow" border="0" />			   Rek. DPLK Sales</a>
+					<a href="<?php echo site_url('/report/user_aktif/') ?>" class="side"><img src="<?php echo ICONS ?>arrow_right.gif" alt="arrow" border="0" />								   User Active</a>
+					<a href="<?php echo site_url('/report/user_nonaktif/') ?>" class="side"><img src="<?php echo ICONS ?>arrow_right.gif" alt="arrow" border="0" />								   User Non Active</a>
+					<a href="<?php echo site_url('/report/pipeline_sup/') ?>" class="side" style="border-bottom:none"><img src="<?php echo ICONS ?>arrow_right.gif" alt="arrow" border="0" />	   Report Pipeline (Tgl)</a>	
 					<a href="<?php echo site_url('/report/pipeline_count_sup/') ?>" class="side" style="border-bottom:none"><img src="<?php echo ICONS ?>arrow_right.gif" alt="arrow" border="0" />Report Pipeline (Jumlah)</a>	
 					<a href="<?php echo site_url('/report/pipeline_coach_reg/') ?>" class="side" style="border-bottom:none"><img src="<?php echo ICONS ?>arrow_right.gif" alt="arrow" border="0" />Report Grouping Pipeline</a>
 					
-<!--                <a href="<?php echo site_url('/report/perform_sales_year/') ?>" class="side"><img src="<?php echo ICONS ?>arrow_right.gif" alt="arrow" border="0" />Performance Sales Tahunan</a>
- -->                </div>
+					</div>
                 <h3><a href="#">Manajemen Leads</a></h3>
              	<div id='box-body'>
                     <a href="<?php echo site_url('/sales/cust_ind') ?>" class="side"><img src="<?php echo ICONS ?>arrow_right.gif" alt="arrow" border="0" />Manajemen Leads</a>	
                 </div>
-                
+-->           
+
+
+        <li class="active treeview">
+          <a href="#">
+            <i class="fa fa-dashboard text-aqua"></i> <span>Report</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="<?php echo site_url('/report/nasabah_cab/') ?>" 			class="fa fa-circle-o"></i> Nasabah Kelolaan Sales</a></li>
+            <li><a href="<?php echo site_url('/report/kelolaan_year/') ?>" 		    class="fa fa-circle-o"></i> DPK Sales</a></li>
+            <li><a href="<?php echo site_url('/report/realisasi_sup/') ?>" 		    class="fa fa-circle-o"></i> Realisasi Sales</a> </li>
+            <li><a href="<?php echo site_url('/report/realisasi_cab/') ?>" 			class="fa fa-circle-o"></i> Realisasi Sales Bulanan</a></li>
+            <li><a href="<?php echo site_url('/report/real_year/') ?>" 				class="fa fa-circle-o"></i> Realisasi Sales Tahunan</a>	</li>
+            <li><a href="<?php echo site_url('/report/performance_cab2/') ?>" 		class="fa fa-circle-o"></i> Performa Sales</a></li>
+            <li><a href="<?php echo site_url('/report/monthly_performance/') ?>"	class="fa fa-circle-o"></i> Performa Sales Bulanan</a></li>
+            <li><a href="<?php echo site_url('/report/perform_year/') ?>" 			class="fa fa-circle-o"></i> Performa Sales Tahunan</a></li>
+            <li><a href="<?php echo site_url('/report/new_customer_sup/') ?>" 		class="fa fa-circle-o"></i> NOC Sales</a></li>
+            <li><a href="<?php echo site_url('/report/new_account_sup/') ?>" 		class="fa fa-circle-o"></i> NOA Sales</a> </li>
+            <li><a href="<?php echo site_url('/report/konsumer_sup/') ?>" 			class="fa fa-circle-o"></i> Penj. Krdt Konsumtif Sales</a></li>
+            <li><a href="<?php echo site_url('/report/cc/') ?>" 					class="fa fa-circle-o"></i> Penj. Kartu Kredit Sales</a>	</li>
+            <li><a href="<?php echo site_url('/report/dplk/') ?>"					class="fa fa-circle-o"></i> Rek. DPLK Sales</a></li>
+            <li><a href="<?php echo site_url('/report/user_aktif/') ?>" 			class="fa fa-circle-o"></i> User Active</a></li>
+            <li><a href="<?php echo site_url('/report/user_nonaktif/') ?>" 			class="fa fa-circle-o"></i> User Non Active</a></li>
+            <li><a href="<?php echo site_url('/report/pipeline_sup/') ?>" 			class="fa fa-circle-o"></i> Report Pipeline (Tgl)</a>	</li>
+            <li><a href="<?php echo site_url('/report/pipeline_count_sup/') ?>" 	class="fa fa-circle-o"></i> Report Pipeline (Jumlah)</a>	</li>
+            <li><a href="<?php echo site_url('/report/pipeline_coach_reg/') ?>" 	class="fa fa-circle-o"></i> Report Grouping Pipeline</a></li>
+          </ul>
+        </li>
+		   
+        <li class="active treeview">
+          <a href="#">
+            <i class="fa fa-dashboard text-aqua"></i> <span>Manajemen Leads</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="<?php echo site_url('/sales/cust_ind') ?>"><i class="fa fa-circle-o"></i> Manajemen Leads </a></li>
+          </ul>
+        </li>
+	   
 				
 				<!--<h3><a href="#">Usulan Nasabah Kelolaan 2015</a></h3>
 				<div id='box-body'>
@@ -502,32 +607,76 @@ $sales_type = $_SESSION['SALES_ID'];
 					
 					<a href="<?php echo site_url('/usulan_nasabah_v1/report_flagging_2016') ?>" class="side"><img src="<?php echo ICONS ?>arrow_right.gif" alt="arrow" border="0" />Report</a>
 				</div>-->
-				
+<!--
 				<h3><a href="#">Activity</a></h3>
              	<div id='box-body'>
                     <a href="<?php echo site_url('/activity/') ?>" class="side" style="border-bottom:none"><img src="<?php echo ICONS ?>arrow_right.gif" alt="arrow" border="0" />Agenda</a>
                 </div>
+-->			
+        <li class="active treeview">
+          <a href="#">
+            <i class="fa fa-dashboard text-aqua"></i> <span>Activity</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="<?php echo site_url('/activity/') ?>"><i class="fa fa-circle-o"></i> Activity </a></li>
+          </ul>
+        </li>	
 				
 				<?php 
 				$cekjam = date('H'); 
 				if ($cekjam >= 15 or $cekjam < 6) { 
 				?>
+<!--
 				<h3><a href="#">Data Segmentasi</a></h3>
 				<div id='box-body'>
 				 <a href="<?php echo site_url('/segmentasi/upload') ?>" class="side"><img src="<?php echo ICONS ?>arrow_right.gif" alt="arrow" border="0" />Download Data</a>
-				 <!--a href="<?php echo site_url('/segmentasi/audit') ?>" class="side"><img src="<?php echo ICONS ?>arrow_right.gif" alt="arrow" border="0" />Audit Trail</a-->
 				</div>
-				<?php } ?>
+-->				
+				 <!--a href="<?php echo site_url('/segmentasi/audit') ?>" class="side"><img src="<?php echo ICONS ?>arrow_right.gif" alt="arrow" border="0" />Audit Trail</a-->
 
+        <li class="active treeview">
+          <a href="#">
+            <i class="fa fa-dashboard text-aqua"></i> <span>Data Segmentasi</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="<?php echo site_url('/segmentasi/upload') ?>"><i class="fa fa-circle-o"></i> Download Data </a></li>
+          </ul>
+        </li>	
+
+				 
+				<?php } ?>
+<!----===============================================================================================--->
 				 <?php } if($level == 'PIMPINAN_WILAYAH' || $level == 'PIMPINAN_CABANG' || $level == 'PEMIMPIN_CABANG' || $level == 'PEMIMPIN_KLN-KK') { ?>
              	
-                <!-- WILAYAH MENU -->                
+                <!-- WILAYAH MENU -->    
+<!---
                 <h3><a href="#">Dashboard</a></h3>
             	<div id='box-body'>
                     <a href="<?php echo site_url('/home/') ?>" class="side"><img src="<?php echo ICONS ?>arrow_right.gif" alt="arrow" border="0" />Home</a>
                     <a href="<?php echo site_url('/dashboard/') ?>" class="side"><img src="<?php echo ICONS ?>arrow_right.gif" alt="arrow" border="0" />Dashboard Sales</a>
                 </div>
-				 <?php if($level == 'PEMIMPIN_CABANG' || $level == 'PEMIMPIN_KLN-KK' || $level == 'PIMPINAN_WILAYAH') { 
+--->				
+        <li class="active treeview">
+          <a href="#">
+            <i class="fa fa-dashboard text-aqua"></i> <span>Home</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li class="active"><a href="<?php echo site_url('/home') ?>"><i class="fa fa-circle-o"></i> home </a></li>
+          </ul>
+        </li>
+
+<!---????--->				
+ <?php if($level == 'PEMIMPIN_CABANG' || $level == 'PEMIMPIN_KLN-KK' || $level == 'PIMPINAN_WILAYAH') { 
+				 
 				 #if($level == 'PEMIMPIN_CABANG'){?>
 				<!--h3><a href="#">TOP 20</a></h3>
 				<?php #}elseif($level == 'PEMIMPIN_KLN-KK'){?>
@@ -548,7 +697,11 @@ $sales_type = $_SESSION['SALES_ID'];
 					<?php #} ?>
 					<a href="<?php echo site_url('/activity_bm/get_rekap_outlet') ?>" class="side"><img src="<?php echo ICONS ?>arrow_right.gif" alt="arrow" border="0" />Rekap Activity</a>
 				</div-->
+				
 				<?php } ?>
+<!---????--->				
+				
+<!---
 				<h3><a href="#">Flagging</a></h3>
                 <div id='box-body'>                    
 				<a href="<?php echo site_url('/self_flagging/bm') ?>" class="side"><img src="<?php echo ICONS ?>arrow_right.gif" alt="arrow" border="0" />Sales Baru</a>
@@ -556,12 +709,43 @@ $sales_type = $_SESSION['SALES_ID'];
 				<a href="<?php echo site_url('/self_flagging/report') ?>" class="side"><img src="<?php echo ICONS ?>arrow_right.gif" alt="arrow" border="0" />Report Sale Baru</a>
 				</div>
 				<h3><a href="#">Report Tunjangan Performance</a></h3>
-			<div id='box-body'>
+				<div id='box-body'>
 				<a href="<?php echo site_url('/report/performance_sup_tunjangan/') ?>" class="side"><img src="<?php echo ICONS ?>arrow_right.gif" alt="arrow" border="0" />Tunjangan Performance</a>
-			</div>
+				</div>
+--->				
+        <li class="active treeview">
+          <a href="#">
+            <i class="fa fa-dashboard text-aqua"></i> <span>Flagging</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="<?php echo site_url('/self_flagging/bm') ?>"><i class="fa fa-circle-o"></i> Sales Baru </a></li>
+            <li><a href="<?php echo site_url('/self_flagging/list_nasabah_tambahan') ?>"><i class="fa fa-circle-o"></i> Sales Lama </a></li>
+            <li><a href="<?php echo site_url('/self_flagging/report') ?>"><i class="fa fa-circle-o"></i> Report Sales Baru </a></li>
+          </ul>
+        </li>
+
+        <li class="active treeview">
+          <a href="#">
+            <i class="fa fa-dashboard text-aqua"></i> <span>Report Tunjangan Performance</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="<?php echo site_url('/report/performance_sup_tunjangan') ?>"><i class="fa fa-circle-o"></i> Tunjangan Performance </a></li>
+          </ul>
+        </li>
+		
+
+				
 			<?php if($level!= 'PEMIMPIN_KLN-KK'){?>
+<!---
                 <h3><a href="#">Report</a></h3>
                 <div id='box-body'>
+-->			
 					<!--
                     <a href="<?php echo site_url('/report/activity_realisasi/') ?>" class="side"><img src="<?php echo ICONS ?>arrow_right.gif" alt="arrow" border="0" />Aktivitas Sdh Realisasi</a>
 					<a href="<?php echo site_url('/report/activity_realisasi_tele/') ?>" class="side"><img src="<?php echo ICONS ?>arrow_right.gif" alt="arrow" border="0" />Aktivitas Sdh Realisasi 500046</a>
@@ -570,38 +754,87 @@ $sales_type = $_SESSION['SALES_ID'];
 					<a href="<?php echo site_url('/report/oportunity/') ?>" class="side"><img src="<?php echo ICONS ?>arrow_right.gif" alt="arrow" border="0" />Rasio Aktivitas Sales</a>                
                		<a href="<?php echo site_url('/report/cust_planning_daily/') ?>" class="side"><img src="<?php echo ICONS ?>arrow_right.gif" alt="arrow" border="0" />Perencanaan Aktivitas</a> 
                     <a href="<?php echo site_url('/report/daily_closed/') ?>" class="side"><img src="<?php echo ICONS ?>arrow_right.gif" alt="arrow" border="0" />Penutupan Penjualan</a--> 
-                	<a href="<?php echo site_url('/report/nasabah_cab/') ?>" class="side"><img src="<?php echo ICONS ?>arrow_right.gif" alt="arrow" border="0" />Nasabah Kelolaan Sales</a>
 					<!--<a href="<?php echo site_url('/report/nasabah_cab_aum/') ?>" class="side"><img src="<?php echo ICONS ?>arrow_right.gif" alt="arrow" border="0" />AUM Nasabah Kel. Sales</a>-->
-					<a href="<?php echo site_url('/report/kelolaan_year/') ?>" class="side"><img src="<?php echo ICONS ?>arrow_right.gif" alt="arrow" border="0" />DPK Sales</a>
-                    <a href="<?php echo site_url('/report/realisasi_sup/') ?>" class="side"><img src="<?php echo ICONS ?>arrow_right.gif" alt="arrow" border="0" />Realisasi Sales</a> 
-					<a href="<?php echo site_url('/report/realisasi_cab/') ?>" class="side"><img src="<?php echo ICONS ?>arrow_right.gif" alt="arrow" border="0" />Realisasi Sales Bulanan</a>
-                    <a href="<?php echo site_url('/report/real_year/') ?>" class="side"><img src="<?php echo ICONS ?>arrow_right.gif" alt="arrow" border="0" />Realisasi Sales Tahunan</a>					
-                    <a href="<?php echo site_url('/report/performance_cab2/') ?>" class="side"><img src="<?php echo ICONS ?>arrow_right.gif" alt="arrow" border="0" />Performa Sales</a>
                     <!--a href="<?php echo site_url('/report/performance_cab/') ?>" class="side"><img src="<?php echo ICONS ?>arrow_right.gif" alt="arrow" border="0" />Performa Sales Cabang</a> -->
-					<a href="<?php echo site_url('/report/monthly_performance/') ?>" class="side"><img src="<?php echo ICONS ?>arrow_right.gif" alt="arrow" border="0" />Performa Sales Bulanan</a>
-					<a href="<?php echo site_url('/report/perform_year/') ?>" class="side"><img src="<?php echo ICONS ?>arrow_right.gif" alt="arrow" border="0" />Performa Sales Tahunan</a>
                     <!--<a href="<?php echo site_url('/report/nasabah/') ?>" class="side"><img src="<?php echo ICONS ?>arrow_right.gif" alt="arrow" border="0" />Nasabah Kel. Non Sales</a>-->
-				    <a href="<?php echo site_url('/report/new_customer_sup/') ?>" class="side"><img src="<?php echo ICONS ?>arrow_right.gif" alt="arrow" border="0" />NOC Sales</a>
-					<a href="<?php echo site_url('/report/new_account_sup/') ?>" class="side" style="border-bottom:none"><img src="<?php echo ICONS ?>arrow_right.gif" alt="arrow" border="0" />NOA Sales</a> 
 					<!--<a href="<?php echo site_url('/report/nasabah_aum/') ?>" class="side"><img src="<?php echo ICONS ?>arrow_right.gif" alt="arrow" border="0" />AUM Nasabah Kel. Non Sales</a>-->
-                    <a href="<?php echo site_url('/report/konsumer_sup/') ?>" class="side" style="border-bottom:none"><img src="<?php echo ICONS ?>arrow_right.gif" alt="arrow" border="0" />Penj. Krdt Konsumtif Sales</a>	
 					<!--<a href="<?php echo site_url('/report/cc_sup/') ?>" class="side" style="border-bottom:none"><img src="<?php echo ICONS ?>arrow_right.gif" alt="arrow" border="0" />Penj. Kartu Kredit Sales</a>		
 					<a href="<?php echo site_url('/report/dplk_sup/') ?>" class="side" style="border-bottom:none"><img src="<?php echo ICONS ?>arrow_right.gif" alt="arrow" border="0" />Rek. DPLK Sales</a>
 					-->
-					<a href="<?php echo site_url('/report/user_aktif/') ?>" class="side"><img src="<?php echo ICONS ?>arrow_right.gif" alt="arrow" border="0" />User Active</a>
-					 <a href="<?php echo site_url('/report/user_nonaktif/') ?>" class="side"><img src="<?php echo ICONS ?>arrow_right.gif" alt="arrow" border="0" />User Non Active</a>
-					<a href="<?php echo site_url('/report/pipeline_sup/') ?>" class="side" style="border-bottom:none"><img src="<?php echo ICONS ?>arrow_right.gif" alt="arrow" border="0" />Report Pipeline (Tgl)</a>	
 					<!--<a href="<?php echo site_url('/report/pipeline_coach_sourcedata/') ?>" class="side" style="border-bottom:none"><img src="<?php echo ICONS ?>arrow_right.gif" alt="arrow" border="0" />Report Pipeline Worksheet(Sumber Leads)</a>-->
-					<a href="<?php echo site_url('/report/pipeline_count_sup/') ?>" class="side" style="border-bottom:none"><img src="<?php echo ICONS ?>arrow_right.gif" alt="arrow" border="0" />Report Pipeline (Jumlah)</a>	
-					<a href="<?php echo site_url('/report/pipeline_coach_reg/') ?>" class="side" style="border-bottom:none"><img src="<?php echo ICONS ?>arrow_right.gif" alt="arrow" border="0" />Report Grouping Pipeline</a>
-					
 <!--                <a href="<?php echo site_url('/report/perform_sales_year/') ?>" class="side"><img src="<?php echo ICONS ?>arrow_right.gif" alt="arrow" border="0" />Performance Sales Tahunan</a>
- -->                </div>
+ -->
+ <!---
+                	<a href="<?php echo site_url('/report/nasabah_cab/') ?>" 				class="side"><img src="<?php echo ICONS ?>arrow_right.gif" alt="arrow" border="0" />						   Nasabah Kelolaan Sales</a>
+					<a href="<?php echo site_url('/report/kelolaan_year/') ?>" 				class="side"><img src="<?php echo ICONS ?>arrow_right.gif" alt="arrow" border="0" />						   DPK Sales</a>
+                    <a href="<?php echo site_url('/report/realisasi_sup/') ?>" 			class="side"><img src="<?php echo ICONS ?>arrow_right.gif" alt="arrow" border="0" />							   Realisasi Sales</a> 
+					<a href="<?php echo site_url('/report/realisasi_cab/') ?>"			 class="side"><img src="<?php echo ICONS ?>arrow_right.gif" alt="arrow" border="0" />							   Realisasi Sales Bulanan</a>
+                    <a href="<?php echo site_url('/report/real_year/') ?>" 				class="side"><img src="<?php echo ICONS ?>arrow_right.gif" alt="arrow" border="0" />							   Realisasi Sales Tahunan</a>					
+                    <a href="<?php echo site_url('/report/performance_cab2/') ?>"			 class="side"><img src="<?php echo ICONS ?>arrow_right.gif" alt="arrow" border="0" />						   Performa Sales</a>
+					<a href="<?php echo site_url('/report/monthly_performance/') ?>" 	class="side"><img src="<?php echo ICONS ?>arrow_right.gif" alt="arrow" border="0" />							   Performa Sales Bulanan</a>
+					<a href="<?php echo site_url('/report/perform_year/') ?>" 				class="side"><img src="<?php echo ICONS ?>arrow_right.gif" alt="arrow" border="0" />						   Performa Sales Tahunan</a>
+				    <a href="<?php echo site_url('/report/new_customer_sup/') ?>" 			class="side"><img src="<?php echo ICONS ?>arrow_right.gif" alt="arrow" border="0" />						   NOC Sales</a>
+					<a href="<?php echo site_url('/report/new_account_sup/') ?>" 			class="side" style="border-bottom:none"><img src="<?php echo ICONS ?>arrow_right.gif" alt="arrow" border="0" />NOA Sales</a> 
+                    <a href="<?php echo site_url('/report/konsumer_sup/') ?>"			 class="side" style="border-bottom:none"><img src="<?php echo ICONS ?>arrow_right.gif" alt="arrow" border="0" />   Penj. Krdt Konsumtif Sales</a>	
+					<a href="<?php echo site_url('/report/user_aktif/') ?>"				 class="side"><img src="<?php echo ICONS ?>arrow_right.gif" alt="arrow" border="0" />							   User Active</a>
+					<a href="<?php echo site_url('/report/user_nonaktif/') ?>" 			class="side"><img src="<?php echo ICONS ?>arrow_right.gif" alt="arrow" border="0" />							   User Non Active</a>
+					<a href="<?php echo site_url('/report/pipeline_sup/') ?>" 			class="side" style="border-bottom:none"><img src="<?php echo ICONS ?>arrow_right.gif" alt="arrow" border="0" />    Report Pipeline (Tgl)</a>	
+					<a href="<?php echo site_url('/report/pipeline_count_sup/') ?>" 		class="side" style="border-bottom:none"><img src="<?php echo ICONS ?>arrow_right.gif" alt="arrow" border="0" />Report Pipeline (Jumlah)</a>	
+					<a href="<?php echo site_url('/report/pipeline_coach_reg/') ?>" 		class="side" style="border-bottom:none"><img src="<?php echo ICONS ?>arrow_right.gif" alt="arrow" border="0" />Report Grouping Pipeline</a>
+					
+ 
+			</div>
+-->			
+			
+			
+         <li class="active treeview">
+          <a href="#">
+            <i class="fa fa-dashboard text-aqua"></i> <span>Report</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="<?php echo site_url('/report/nasabah_cab/') ?>" 		><i class="fa fa-circle-o"></i>Nasabah Kelolaan Sales</a> </li>
+            <li><a href="<?php echo site_url('/report/kelolaan_year/') ?>" 		><i class="fa fa-circle-o"></i>DPK Sales</a> </li>
+            <li><a href="<?php echo site_url('/report/realisasi_sup/') ?>" 		><i class="fa fa-circle-o"></i>Realisasi Sales</a>  </li>
+            <li><a href="<?php echo site_url('/report/realisasi_cab/') ?>"		><i class="fa fa-circle-o"></i>Realisasi Sales Bulanan</a> </li>
+            <li><a href="<?php echo site_url('/report/real_year/') ?>" 			><i class="fa fa-circle-o"></i>Realisasi Sales Tahunan</a>	 </li>
+            <li><a href="<?php echo site_url('/report/performance_cab2/') ?>"	><i class="fa fa-circle-o"></i>Performa Sales</a> </li>
+            <li><a href="<?php echo site_url('/report/monthly_performance/') ?>"><i class="fa fa-circle-o"></i>Performa Sales Bulanan</a> </li>
+            <li><a href="<?php echo site_url('/report/perform_year/') ?>" 		><i class="fa fa-circle-o"></i>Performa Sales Tahunan</a> </li>
+            <li><a href="<?php echo site_url('/report/new_customer_sup/') ?>" 	><i class="fa fa-circle-o"></i>NOC Sales</a> </li>
+            <li><a href="<?php echo site_url('/report/new_account_sup/') ?>" 	><i class="fa fa-circle-o"></i>NOA Sales</a>  </li>
+            <li><a href="<?php echo site_url('/report/konsumer_sup/') ?>"		><i class="fa fa-circle-o"></i>Penj. Krdt Konsumtif Sales</a> </li>
+            <li><a href="<?php echo site_url('/report/user_aktif/') ?>"			><i class="fa fa-circle-o"></i>User Active</a> </li>
+            <li><a href="<?php echo site_url('/report/user_nonaktif/') ?>" 		><i class="fa fa-circle-o"></i>User Non Active</a> </li>
+            <li><a href="<?php echo site_url('/report/pipeline_sup/') ?>" 		><i class="fa fa-circle-o"></i>Report Pipeline (Tgl)</a>	 </li>
+            <li><a href="<?php echo site_url('/report/pipeline_count_sup/') ?>" ><i class="fa fa-circle-o"></i>Report Pipeline (Jumlah)</a>	 </li>
+            <li><a href="<?php echo site_url('/report/pipeline_coach_reg/') ?>" ><i class="fa fa-circle-o"></i>Report Grouping Pipeline</a> </li>
+          </ul>                                                                                                 
+        </li>
+
+ 
+ 
+<!----
                 <h3><a href="#">Manajemen Leads</a></h3>
              	<div id='box-body'>
                     <a href="<?php echo site_url('/sales/cust_ind') ?>" class="side"><img src="<?php echo ICONS ?>arrow_right.gif" alt="arrow" border="0" />Manajemen Leads</a>	
                 </div>
+---> 
+         <li class="active treeview">
+          <a href="#">
+            <i class="fa fa-dashboard text-aqua"></i> <span>Manajemen Leads</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="<?php echo site_url('/sales/cust_ind') ?>" 		><i class="fa fa-circle-o"></i>Manajemen Leads</a> </li>
+          </ul>                                                                                                 
+        </li>
                 
+				
 				
 				<!--<h3><a href="#">Usulan Nasabah Kelolaan 2015</a></h3>
 				<div id='box-body'>
@@ -620,18 +853,44 @@ $sales_type = $_SESSION['SALES_ID'];
 					<a href="<?php echo site_url('/usulan_nasabah_v1/cr_sales_pengelola') ?>" class="side"><img src="<?php echo ICONS ?>arrow_right.gif" alt="arrow" border="0" />Usulan Perubahan Pengelola</a>
 					
 				</div>-->
-			
+<!---
 				<h3><a href="#">Activity</a></h3>
              	<div id='box-body'>
                     <a href="<?php echo site_url('/activity/') ?>" class="side" style="border-bottom:none"><img src="<?php echo ICONS ?>arrow_right.gif" alt="arrow" border="0" />Staging & Activity</a>
                 </div>
+--->			
+         <li class="active treeview">
+          <a href="#">
+            <i class="fa fa-dashboard text-aqua"></i> <span>Activity</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="<?php echo site_url('/activity/') ?>" 		><i class="fa fa-circle-o"></i>Activity</a> </li>
+          </ul>                                                                                                 
+        </li>
+
+				
 				<?php
 				if ($this->session->userdata('ID') == '21308') { ?>
-				
+<!---
 				<h3><a href="#">Req Data</a></h3>
              	<div id='box-body'>
                     <a href="<?php echo site_url('../data.zip') ?>" class="side" style="border-bottom:none"><img src="<?php echo ICONS ?>arrow_right.gif" alt="arrow" border="0" />Request Data</a>
                 </div>
+-->				
+         <li class="active treeview">
+          <a href="#">
+            <i class="fa fa-dashboard text-aqua"></i> <span>Req Data</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="<?php echo site_url('../data.zip') ?>"><i class="fa fa-circle-o"></i>Request Data</a> </li>
+          </ul>                                                                                                 
+        </li>			
 				<?php
 				}
 				
@@ -640,13 +899,30 @@ $sales_type = $_SESSION['SALES_ID'];
 				$cekjam = date('H'); 
 				if ($cekjam >= 15 or $cekjam < 6) {
 				?>
+<!--
 				<h3><a href="#">Data Segmentasi</a></h3>
 				<div id='box-body'>
 				 <a href="<?php echo site_url('/segmentasi/upload') ?>" class="side"><img src="<?php echo ICONS ?>arrow_right.gif" alt="arrow" border="0" />Download Data</a>
-				 <!--a href="<?php echo site_url('/segmentasi/audit') ?>" class="side"><img src="<?php echo ICONS ?>arrow_right.gif" alt="arrow" border="0" />Audit Trail</a-->
 				</div>
+-->				
+				 <!--a href="<?php echo site_url('/segmentasi/audit') ?>" class="side"><img src="<?php echo ICONS ?>arrow_right.gif" alt="arrow" border="0" />Audit Trail</a-->
+
+         <li class="active treeview">
+          <a href="#">
+            <i class="fa fa-dashboard text-aqua"></i> <span>Data Segmentasi</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="<?php echo site_url('/segmentasi/upload') ?>"><i class="fa fa-circle-o"></i>Download Data</a> </li>
+          </ul>                                                                                                 
+        </li>					 
+				 
+				 
 				<?php } ?>
 				<?php } ?>
+				
 				<!--h3><a href="#">Usulan Nasabah Kelolaan 2017</a></h3>
             <div id='box-body'>
                 <a href="<?php echo site_url('/usulan_nasabah/list_nasabah_kel') ?>" class="side" ><img src="<?php echo ICONS ?>arrow_right.gif" alt="arrow" border="0" />Nasabah Kelolaan 2017</a>

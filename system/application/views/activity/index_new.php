@@ -53,8 +53,13 @@ padding-bottom: 7px;
 </head>
 <body>
 <?php
+//'year' => $this->uri->segment(3),
+//'month' => $this->uri->segment(4)
+
 // Generate calendar
-echo $this->calendar->generate($year, $month);
+//echo $this->calendar->generate($this->uri->segment(3), $this->uri->segment(4));
+echo $calendar;
+//$data;
 ?>
 </body>
 </html>

@@ -26,17 +26,13 @@ class Activity extends Controller {
 		//if( ! in_array($lvl,$arrlvl)) {redirect('forbiden/index/1');}
 	}
 	
-//		function index_new($year = 0, $month = 0)
-		function index_new()
+		function index_new($year = 0, $month = 0)
+//		function index_new()
 	{
 		
 		//echo"ACTIVITY INDEX NEW";
 
-$data = array(
-'year' => $this->uri->segment(3),
-'month' => $this->uri->segment(4)
-);
-
+//tab 1---------------------------
 // Creating template for table
 $prefs['template'] = '
 {table_open}<table cellpadding="1" cellspacing="2">{/table_open}
@@ -72,15 +68,49 @@ $prefs['template'] = '
 
 {table_close}</table>{/table_close}
 ';
-
+/*
+*/
 $prefs['day_type'] = 'short';
 $prefs['show_next_prev'] = true;
 $prefs['next_prev_url'] = 'activity/index_new';
 
 // Loading calendar library and configuring table template
 $this->load->library('calendar', $prefs);
+
+#$year = $this->uri->segment(3);
+#$month = $this->uri->segment(4);
+$date 	= getdate();	 
+		$year 	= ($year == 0)? $date['year']:$year;
+		$month 	= ($month == 0)? $date['mon']:$month;
+		$day 	= $date['mday'];
+		
+/*
+$data = array(
+//'year' => $this->uri->segment(3),
+//'month' => $this->uri->segment(4)
+'calendar' => $this->calendar->generate($this->uri->segment(3), $this->uri->segment(4));
+);
+*/
+
+$npp = $this->session->userdata('ID');		
+		$arr = array('M'=>$month,'Y'=>$year);
+		$data['month'] = $date['month'];
+		$data['year'] 	= $date['year'];
+		
+/*
+		$rows = $this->_activity->get_act_items($arr);		
+		#print_r($rows);die();
+		$datas = array();
+		foreach($rows as $rs){
+			$datas[$rs->D] = '#';
+		}
+		
+		$data['calendar'] = $this->calendar->generate($year, $month, $datas);
+*/
+		$data['calendar'] = $this->calendar->generate($year, $month);
+
 // Load view page
-$this->load->view('activity/index_new', $data);
+$this->load->view('activity/index', $data);
 }
 
 

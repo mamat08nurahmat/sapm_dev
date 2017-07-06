@@ -18,14 +18,18 @@ class _login extends Model
 //----->>>manual input npp		
 //pemimpin cabang
 //		$this->db->where('a.ID', '19000');
-
+//		$this->db->where('a.ID', '21308');
+//
+		
 //pemimpin Superviser
 //		$this->db->where('a.ID', '27807');
 
 
 //sales
-		$this->db->where('a.ID', '27424');
+//		$this->db->where('a.ID', '27424');
 //		$this->db->where('a.ID', '15057');
+
+		$this->db->where('a.ID', $npp);
 		return $this->db->get()->result();
 	}
 

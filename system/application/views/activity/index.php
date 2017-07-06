@@ -1,6 +1,49 @@
 
 <?php $this->load->view('default/header') ?>		
+<style>
 
+
+table{
+border:  solid #25BAE4;
+border-collapse:collapse;
+margin-top: 10px;
+margin-left: 10px;
+}
+td{
+width: 50px;
+height: 50px;
+text-align: center;
+border: 1px solid #e2e0e0;
+font-size: 18px;
+font-weight: bold;
+}
+th{
+height: 50px;
+padding-bottom: 8px;
+background:#25BAE4;
+font-size: 20px;
+}
+.prev_sign a, .next_sign a{
+color:white;
+text-decoration: none;
+}
+tr.week_name{
+font-size: 16px;
+font-weight:400;
+color:red;
+width: 10px;
+background-color: #efe8e8;
+}
+.highlight{
+background-color:#25BAE4;
+color:white;
+height: 27px;
+padding-top: 13px;
+padding-bottom: 7px;
+}
+
+
+</style>
 <!-- =============================================== -->
    	<section class="content2">
 
@@ -127,88 +170,21 @@
     <!-- Small boxes (Stat box) -->
     <div class="row">
         <div class="col-lg-6 col-xs-6">
-            <!-- small box -->
-            <div class="small-box bg-aqua">
-            <!-- Calendar -->
-            <div class="box box-solid bg-green-gradient">
-                <div class="box-header">
-                    <i class="fa fa-calendar"></i>
-                    <h3 class="box-title">Calendar</h3>
-                    <!-- tools box -->
-                    <div class="pull-right box-tools">
-					
-					<?php
-					echo $calendar ;
-					?>
-					
-                        <!-- button with a dropdown -->
-                        <div class="btn-group">
-                            <button class="btn btn-success btn-sm dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bars"></i></button>
-                            <ul class="dropdown-menu pull-right" role="menu">
-                                <li><a href="#">Add new event</a></li>
-                                <li><a href="#">Clear events</a></li>
-                                <li class="divider"></li>
-                                <li><a href="#" id="START" >View calendar</a></li>
-                            </ul>
-                        </div>
-                        <button class="btn btn-success btn-sm" data-widget="collapse" id="START" ><i class="fa fa-minus"></i></button>
-                        <button class="btn btn-success btn-sm" data-widget="remove"><i class="fa fa-times"></i></button>
-                    </div><!-- /. tools -->
-                </div><!-- /.box-header -->
-                <div class="box-body no-padding">
-                    <!--The calendar -->
-                    <div id="calendar" style="width: 100%"></div>
-                </div><!-- /.box-body -->
-                <div class="box-footer text-black">
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <!-- Progress bars -->
-                            <div class="clearfix">
-                                <span class="pull-left">Task #1</span>
-                                <small class="pull-right">90%</small>
-                            </div>
-                            <div class="progress xs">
-                                <div class="progress-bar progress-bar-green" style="width: 90%;"></div>
-                            </div>
-
-                            <div class="clearfix">
-                                <span class="pull-left">Task #2</span>
-                                <small class="pull-right">70%</small>
-                            </div>
-                            <div class="progress xs">
-                                <div class="progress-bar progress-bar-green" style="width: 70%;"></div>
-                            </div>
-                        </div><!-- /.col -->
-                        <div class="col-sm-6">
-                            <div class="clearfix">
-                                <span class="pull-left">Task #3</span>
-                                <small class="pull-right">60%</small>
-                            </div>
-                            <div class="progress xs">
-                                <div class="progress-bar progress-bar-green" style="width: 60%;"></div>
-                            </div>
-
-                            <div class="clearfix">
-                                <span class="pull-left">Task #4</span>
-                                <small class="pull-right">40%</small>
-                            </div>
-                            <div class="progress xs">
-                                <div class="progress-bar progress-bar-green" style="width: 40%;"></div>
-                            </div>
-                        </div><!-- /.col -->
-                    </div><!-- /.row -->
-                </div>
-            </div><!-- /.box -->			
-				
-            </div>
+         
+ 
+ <?php
+ echo $calendar;
+ ?>
+ 
         </div><!-- ./col -->
 		
         <div class="col-lg-6 col-xs-6">
             <!-- small box -->
             <div class="small-box bg-green">
                 <div class="inner">
-                    <h3>53<sup style="font-size: 20px">%</sup></h3>
+                    <h3>100<sup style="font-size: 20px">%</sup></h3>
                     <p><input name="START" id="START" type="text" size="20" readonly="readonly" class="input"></p>
+					<p><button name="START" id="START" >XXXXXXXXXXXX</button></p>
                 </div>
                 <div class="icon">
                     <i class="ion ion-stats-bars"></i>

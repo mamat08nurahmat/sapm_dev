@@ -98,6 +98,7 @@ function tab_4_view($type,$id){
 			$data['data'] = $this->_sales->get_data_cust($type, $id,'CUST_INDV_PROS');
 			//$view = 'cust_ind_view';
 		//	echo"type 0";
+		print_r($data);die();
 		}
 		else
 		{

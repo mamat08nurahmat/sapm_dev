@@ -1,6 +1,25 @@
 <?php $this->load->view('template/header') ?>	
-<?php $this->load->view('template/topbar') ?>	
-<?php $this->load->view('template/sidebar') ?>	
+<!---==============================CUSTOM CSS================================================-->		
+<!--tambahkan custom css disini-->
+<!-- iCheck 
+<link href="<?php echo $this->config->item('base_url') ?>assetsLTE/AdminLTE-2.0.5/plugins/iCheck/flat/blue.css" rel="stylesheet" type="text/css" />
+-->
+<!-- Morris chart 
+<link href="<?php echo $this->config->item('base_url') ?>assetsLTE/AdminLTE-2.0.5/plugins/morris/morris.css" rel="stylesheet" type="text/css" />
+-->
+<!-- jvectormap 
+<link href="<?php echo $this->config->item('base_url') ?>assetsLTE/AdminLTE-2.0.5/plugins/jvectormap/jquery-jvectormap-1.2.2.css" rel="stylesheet" type="text/css" />
+-->
+<!-- Date Picker 
+<link href="<?php echo $this->config->item('base_url') ?>assetsLTE/AdminLTE-2.0.5/plugins/datepicker/datepicker3.css" rel="stylesheet" type="text/css" />
+-->
+<!-- Daterange picker 
+<link href="<?php echo $this->config->item('base_url') ?>assetsLTE/AdminLTE-2.0.5/plugins/daterangepicker/daterangepicker-bs3.css" rel="stylesheet" type="text/css" />
+-->
+<!-- bootstrap wysihtml5 - text editor 
+<link rel="stylesheet" href="<?php echo $this->config->item('base_url');?>assetsLTE/AdminLTE-2-3-11/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
+-->
+
 <!----------------------------------------------------->
 <!----
 <link href="http://192.168.3.14/new_sapm//public/css/layout.css" rel="stylesheet" type="text/css" />
@@ -14,7 +33,13 @@
 <link href="<?php echo $this->config->item('base_url') ?>public/css/smart_wizard.css" rel="stylesheet" type="text/css" />
 <link type="text/css" rel="stylesheet" href="<?php echo $this->config->item('base_url') ?>public/css/flipclock.css" />
 -->
+<!----------------------------------------------------->
 
+<!---+++++++++++++++++++++++++++CUSTOM CSS END+++++++++++++++++++++++++++++++++++--->		
+
+<!---+++++++++++++++++++++++++++CUSTOM JS+++++++++++++++++++++++++++++++++++--->		
+
+<!------------------JS ----------------------------------->
 <script type="text/javascript" src="<?php echo $this->config->item('base_url') ?>public/js/jquery-1.4.2.min.js"></script>
 <script type="text/javascript" src="<?php echo $this->config->item('base_url') ?>public/js/flexigrid.pack.js"></script>
 <script type="text/javascript" src="<?php echo $this->config->item('base_url') ?>public/js/jquery-ui-1.8.4.custom.min.js"></script>
@@ -24,7 +49,14 @@
 <script type="text/javascript" src="<?php echo $this->config->item('base_url') ?>public/js/number_format.js"></script>
 -->
 
- 
+<!-----------------------------------------------------> 	
+<!---+++++++++++++++++++++++++++CUSTOM JS END+++++++++++++++++++++++++++++++++++--->		
+
+
+<?php $this->load->view('template/topbar') ?>	
+<?php $this->load->view('template/sidebar') ?>	
+
+
 <!--Start Section class content2 -->
 <section class="content">
 <!------------------------------>
@@ -368,4 +400,3 @@ $(document).ready(function(){
 </section>
  <!-- / end section class content2 -->
 <!------------------------------>
-	
